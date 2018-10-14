@@ -1,0 +1,42 @@
+
+Megaman:
+  ✘ caminar y dispara @cancelled(18-10-13 14:51)
+  ✘ saltar y disparar @cancelled(18-10-13 14:51)
+  ✔ cambiar el rotadoenY por un transform scale = -1 @done(18-10-13 17:08)
+  ✔ barra de vida @done(18-10-14 14:08)
+    barra de vida estilo megaman
+
+Menues:
+  ☐ Menu de inicio
+    ✔ nueva partida @done(18-10-13 15:57)
+
+    ✔ cargar Partida @done(18-10-13 15:57)
+    ✔ Salir del juego. @done(18-10-13 15:57)
+    ☐ background.
+  ✔ Menu de muerte. @done(18-10-14 12:11)
+    no pausa el juego, obscurece la pantalla, aparece un texto y un solo boton
+    en la pantalla.
+    ✔ Texto you died. @done(18-10-14 12:11)
+
+Bugs:
+  ✔ Controllers.JoystickReturnedCenter(1, 1) siempre regresa false @done(18-10-13 14:18)
+  por alguna razon el metodo mencionado siempre regresa 0 cuando se usa la calse
+  de TitleMenuController en el cual lo unico dirente de el PauseMenuController es el
+  cambbio de la variable canPause.
+  Pero cuando se agrega la linea ;
+  print(Controllers.GetJoystick(1, 1));
+  para ver que pasa con el metodo JoystickReturnedCenter el metodo comienza a 
+  regresar true.
+  soluciones:
+    ✘ asignar Controllers.GetJoystick(1, 1) a una variable que no se usa @cancelled(18-10-13 14:17)
+    ✔ inicializar PauseMenuController @done(18-10-13 14:18)
+
+Archive:
+  ✔ caminar @done(18-10-13 08:31) @project(Megaman)
+  ✔ saltar @done(18-10-13 08:31) @project(Megaman)
+  ✔ slide @done(18-10-13 08:31) @project(Megaman)
+  ✔ cinemachine @done(18-10-13 08:31) @project(Camara)
+  ✔ Menu de pausa @done(18-10-13 08:31) @project(Menues)
+  ✔ pause @done(18-10-13 08:31) @project(Menues)
+  ✔ Continuar @done(18-10-13 08:31) @project(Menues)
+  ✔ salir @done(18-10-13 08:31) @project(Menues)
