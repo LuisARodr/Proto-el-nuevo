@@ -86,10 +86,12 @@ public class Player : Character25D
 
     protected override void HealthRefresher()
     {
+        /*
         if (Controllers.GetButton(1, "B", 0))
         {
             healthValue -= 1f;
         }
+        */
         HealthBar.fillAmount = healthValue / 100f;
         if(healthValue <= 0)
         {

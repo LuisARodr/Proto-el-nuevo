@@ -132,12 +132,12 @@ public abstract class MenuController : MonoBehaviour {
                 }
             }
         }
-
+        /*
         if (Controllers.GetButton(1, "Y", 1))
         {
             deadScreen = true;
         }
-
+        */
 
 
         if (deadScreen || initialDeadCount || finalDeadCount || deadScreenCount)
