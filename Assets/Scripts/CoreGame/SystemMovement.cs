@@ -35,15 +35,18 @@ namespace GameCore
 
             public static void Move2D(Transform t, float speed)
             {
-                t.Translate(Vector3.forward * speed * AxisDeltaTime.x);
-
+                //t.Translate(Vector3.forward * speed * AxisDeltaTime.x);
+                t.Translate((t.rotation.y == 0 ? 1 : -1) * Vector3.forward * speed * AxisDeltaTime.x);
             }
 
             public static void RotateY(Transform t)
             {
-                t.localScale = Controllers.GetJoystick(1, 1).x > 0 ? new Vector3(1f, 2.1439f, 1f) :
+                /*t.localScale = Controllers.GetJoystick(1, 1).x > 0 ? new Vector3(1f, 2.1439f, 1f) :
                     Controllers.GetJoystick(1, 1).x < 0 ? new Vector3(1f, 2.1439f, -1f) :
-                    t.localScale;
+                    t.localScale;*/
+                t.rotation = Quaternion.Euler(0f, 
+                    Controllers.GetJoystick(1, 1).x > 0 ? 0f :
+                    Controllers.GetJoystick(1, 1).x < 0 ? 180f : t.rotation.y, 0f);
             }
 
             public static void StartSlide(Rigidbody rb, GameObject standingCollider, GameObject slidingCollider
