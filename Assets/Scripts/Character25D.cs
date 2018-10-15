@@ -53,7 +53,9 @@ public abstract class Character25D : MonoBehaviour
         EndSlide();
         Jump();
         HealthRefresher();
-        
+        InvulRefresher();
+
+
         isGrounding = ground.isGrounding(transform);
         if (isSliding)
             slideTimer += Time.deltaTime;
@@ -73,7 +75,7 @@ public abstract class Character25D : MonoBehaviour
     protected virtual void StartSlide()
     {
         Movement.StartSlide(rb, standingCollider, slidingCollider
-            , new Vector3(0f,0f,transform.localScale.z), dashForce);
+            , new Vector3(0f,0f,transform.forward.z), dashForce);
         isSliding = true;
         slideTimer = 0f;
     }
@@ -103,6 +105,11 @@ public abstract class Character25D : MonoBehaviour
     }
 
     protected virtual void HealthRefresher()
+    {
+
+    }
+
+    protected virtual void InvulRefresher()
     {
 
     }

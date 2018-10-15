@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 65606987654123946}
   m_Layer: 0
   m_Name: Save2
-  m_TagString: Untagged
+  m_TagString: Save
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,7 +47,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1411977194976500}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.8414822, y: 13.589094, z: 1}

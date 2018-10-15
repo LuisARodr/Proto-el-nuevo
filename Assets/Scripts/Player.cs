@@ -14,6 +14,11 @@ public class Player : Character25D
 
     
     private float healthValue;
+    private float invulRemaining;
+    [SerializeField, Range(0,2)]
+    private float invulTime;
+    [SerializeField]
+    private MeshRenderer bodyRenderer;
 
     protected override void Awake()
     {
@@ -97,6 +102,52 @@ public class Player : Character25D
         {
             MenuController.deadScreen = true;
             this.gameObject.SetActive(false);
+        }
+    }
+
+    protected override void InvulRefresher()
+    {
+        if(invulRemaining > 0)
+        {
+            invulRemaining -= Time.deltaTime;
+        }
+        
+    }
+    //siguiente codigo no es mio
+    private IEnumerator Blink(float waitTime)
+    {
+        //print("Coorutine with times: " + Time.time + " -- " );
+        float endTime = Time.time + waitTime;
+        while (Time.time < endTime)
+        {
+            print("Hello?");
+            bodyRenderer.enabled = false;
+            yield return new WaitForSeconds(0.1f);
+            bodyRenderer.enabled = true;
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+
+
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //if (collision.collider.tag == "Enemy" & invulRemaining <= 0)
+        if ((collision.collider.tag == "Enemy" & invulRemaining <= 0 ) || (Controllers.GetButton(1,"Y",0) & invulRemaining <= 0))
+        {
+            print(invulRemaining);
+            healthValue -= 25f;
+            invulRemaining = invulTime;
+            StartCoroutine(Blink(invulRemaining));
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Pit")
+        {
+            healthValue = 0;
+            HealthRefresher();
         }
     }
 }

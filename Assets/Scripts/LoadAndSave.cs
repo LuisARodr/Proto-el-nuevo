@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using GameCore.MemorySystem;
 
-public class LoadOnLoad : MonoBehaviour {
-
-	// Use this for initialization
+public class LoadAndSave : MonoBehaviour {
+    
 	void Awake () {
 		if (MemorySystem.loadGame)
         {
@@ -13,6 +12,7 @@ public class LoadOnLoad : MonoBehaviour {
             MemorySystem.loadGame = false;
             Vector3 pos = GetComponent<Transform>().position;
             GetComponent<Transform>().position = new Vector3(pos.x,gd.PosY,gd.PosX);
+            //print("load at: " + new Vector3(pos.x, gd.PosY, gd.PosX));
         }
 	}
     /*
@@ -26,4 +26,14 @@ public class LoadOnLoad : MonoBehaviour {
         }
     }
     */
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Save")
+        {
+            MemorySystem.Save(new GameData(GetComponent<Transform>().position.z,
+               GetComponent<Transform>().position.y), "save.data");
+            //print("saved at: " + GetComponent<Transform>().position.z + " -- " +
+            //   GetComponent<Transform>().position.y);
+        }
+    }
 }

@@ -147,7 +147,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1567183688052468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.25, z: -7.3}
+  m_LocalPosition: {x: 0, y: -3.59, z: -6.41}
   m_LocalScale: {x: 1, y: 2.1439, z: 1}
   m_Children:
   - {fileID: 4452790815790112}
@@ -363,6 +363,8 @@ MonoBehaviour:
   maxSlideTime: 0.9
   HealthBarGO: {fileID: 0}
   HealthBar: {fileID: 0}
+  invulTime: 1
+  renderer: {fileID: 23250495205253364}
 --- !u!136 &136058936233530976
 CapsuleCollider:
   m_ObjectHideFlags: 1

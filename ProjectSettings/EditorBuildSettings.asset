@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MONO25D.unity
     guid: f469a1584e88a984c9e74292b10eb94d
+  - enabled: 1
+    path: Assets/Scenes/Escena1.unity
+    guid: cef51443f1446cb41a523fe097b78a4f
   m_configObjects: {}

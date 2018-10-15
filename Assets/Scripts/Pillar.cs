@@ -40,7 +40,7 @@ public class Pillar : MonoBehaviour {
     {
         if(collision.gameObject.name == "Bullet(Clone)")
         {
-            Debug.Log("eNTRO la bala");
+            //Debug.Log("eNTRO la bala");
             
             rend.material = mat2;
             coll = true;

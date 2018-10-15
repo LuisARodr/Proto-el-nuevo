@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c32d0cf48188b44797d5986baf4a260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameScene: MONO25D
+  gameScene: Escena1
   titleScene: 
   pauseMenu: {fileID: 135119686}
   deadScreenGO: {fileID: 1936893870}
