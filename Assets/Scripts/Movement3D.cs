@@ -4,12 +4,14 @@ using UnityEngine;
 using CoreGame.PlayerController;
 using GameCore.SystemControls;
 
+#pragma warning disable 0649
+
 public class Movement3D : MonoBehaviour {
 
     Rigidbody characterBody;
     public float speed;
     public float jumpPower;
-    Animator animator;
+    Animator animator;  
     Transform characterTransform;
 
     //private bool jumped = false;
