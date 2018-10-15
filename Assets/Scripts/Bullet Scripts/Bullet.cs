@@ -38,9 +38,16 @@ public class Bullet : PooledObjectBehavior {
         objectPooler.GetObjectFromPool("Explosion", lastPosition, true);
         ReturnBulletToPool();
     }
+    private void OnTriggerEnter(Collider other) {
+        collide = true;
+        bulletRigidBody.velocity = Vector3.zero;
+        objectPooler.GetObjectFromPool("Explosion", lastPosition, true);
+        ReturnBulletToPool();
+    }
 
     override protected void ReturnBulletToPool() {
         collide = false;
         base.ReturnBulletToPool();
     }
+
 }
