@@ -5,14 +5,14 @@ Megaman:
   ✔ cambiar el rotadoenY por un transform scale = -1 @done(18-10-13 17:08)
   ✔ barra de vida @done(18-10-14 14:08)
     barra de vida estilo megaman
-  ☐ Hacer que baje la vida
+  ✔ Hacer que baje la vida @done(18-10-15 10:01)
     ✔ agregar frames de invulneravilidad @done(18-10-15 09:46)
     ✔ onEnterCollider @done(18-10-15 09:46)
       si te toca algo que es de tipo enemigo bajar la vida y poner los frames de invl
     ✔ onEnterCollider @done(18-10-15 09:11)
       si si tocas algo con la Tag "Pit" mueres.
-  ☐ Hacer que se guarde el progreso
-    ☐ guardar cuando empieza el juego
+  ✔ Hacer que se guarde el progreso @done(18-10-15 10:01)
+    ✘ guardar cuando empieza el juego @cancelled(18-10-15 10:01)
     ✔ guardar cada pantalla @done(18-10-15 09:11)
 
 Menues:

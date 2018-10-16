@@ -33,6 +33,12 @@ namespace GameCore
                 rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             }
 
+            public static void JumpNoForce(Transform t, Rigidbody rb, float jumpHeight
+                , float jumpSpeed, float fallSpeed)
+            {
+
+            }
+
             public static void Move2D(Transform t, float speed)
             {
                 //t.Translate(Vector3.forward * speed * AxisDeltaTime.x);

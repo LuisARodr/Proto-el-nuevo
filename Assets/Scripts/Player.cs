@@ -19,12 +19,15 @@ public class Player : Character25D
     private float invulTime;
     [SerializeField]
     private MeshRenderer bodyRenderer;
+    [SerializeField, Range(0, 5)]
+    private float gravityMultiplier;
 
     protected override void Awake()
     {
         base.Awake();
         HealthBarGO.SetActive(true);
         healthValue = 100f;
+        Physics.gravity = new Vector3(0f, -gravityMultiplier * 9.8f, 0f);
     }
 
     protected override void Move()

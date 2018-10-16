@@ -123,8 +123,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1632589213004828}
-  m_LocalRotation: {x: 0.053164218, y: 0.0023038685, z: -0.000196849, w: 0.99858314}
-  m_LocalPosition: {x: -1.0800303, y: 0.0002504313, z: 0.007823944}
+  m_LocalRotation: {x: 0.059807446, y: 0.039797276, z: -0.003669104, w: 0.9974096}
+  m_LocalPosition: {x: -0.19005439, y: 0.000042968488, z: 0.0013516694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4374721985165546}
@@ -151,9 +151,9 @@ MonoBehaviour:
   m_ScreenX: 0.328
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0.213
-  m_DeadZoneHeight: 0.72
+  m_DeadZoneHeight: 0.518
   m_SoftZoneWidth: 0.8
-  m_SoftZoneHeight: 0.88
+  m_SoftZoneHeight: 0.87
   m_BiasX: 0
   m_BiasY: 0
 --- !u!114 &114329067989550686
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 114546637584274254}
-  m_PathPosition: 0.14024231
+  m_PathPosition: 0.14471339
   m_PositionUnits: 0
   m_PathOffset: {x: -110.259415, y: 0.5652568, z: 5.3699713}
   m_XDamping: 0
