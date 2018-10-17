@@ -11,6 +11,7 @@ public class Player : Character25D
 
     public GameObject HealthBarGO;
     public Image HealthBar;
+    
 
     
     private float healthValue;
@@ -34,12 +35,13 @@ public class Player : Character25D
     {
         base.Move();
         //anim.SetFloat("Move", Mathf.Abs(Axis.y));
+        anim.SetBool("Walking", (Controllers.GetJoystick(1, 1).x != 0f));
     }
     
 
     protected override void Jump()
     {
-        //anim.SetBool("Ground", isGrounding);
+        anim.SetBool("Jumping", !isGrounding);
         if (Controllers.GetButton(1,"A",1) & isGrounding & (Controllers.GetJoystick(1,1).y >= -.5))
         {
             rb.velocity = Vector3.zero;
@@ -57,6 +59,7 @@ public class Player : Character25D
             base.StartSlide();
             //insertar aqui la animacion de slide
             //anim.SetTrigger("Jump");
+            anim.SetBool("Sliding", true);
         }
     }
 
@@ -88,6 +91,7 @@ public class Player : Character25D
             base.EndSlide();
             //insertar aqui la animacion de slide (fin)
             //anim.SetTrigger("Jump");
+            anim.SetBool("Sliding", false);
         }
 
     }
@@ -123,7 +127,6 @@ public class Player : Character25D
         float endTime = Time.time + waitTime;
         while (Time.time < endTime)
         {
-            print("Hello?");
             bodyRenderer.enabled = false;
             yield return new WaitForSeconds(0.1f);
             bodyRenderer.enabled = true;
@@ -138,7 +141,7 @@ public class Player : Character25D
         //if (collision.collider.tag == "Enemy" & invulRemaining <= 0)
         if ((collision.collider.tag == "Enemy" & invulRemaining <= 0 ) || (Controllers.GetButton(1,"Y",0) & invulRemaining <= 0))
         {
-            print(invulRemaining);
+            //print(invulRemaining);
             healthValue -= 25f;
             invulRemaining = invulTime;
             StartCoroutine(Blink(invulRemaining));

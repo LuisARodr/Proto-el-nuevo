@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 3ffbb1998efaca041b40469221b4ea30
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: back
+    100002: bottom
+    100004: cabeza
+    100006: clavicula1
+    100008: clavicula2
+    100010: cuello
+    100012: ikHandle5
+    100014: ikHandle6
+    100016: ikHandle7
+    100018: ikHandle8
+    100020: ikHandle9
+    100022: joint6
+    100024: l_codo
+    100026: l_femur
+    100028: l_hombro
+    100030: l_mano
+    100032: l_punta
+    100034: l_rodilla
+    100036: l_tobillo
+    100038: left
+    100040: //RootNode
+    100042: nurbsCircle1
+    100044: pelvis
+    100046: polySurface15
+    100048: r_codo
+    100050: r_femur
+    100052: r_hombro
+    100054: r_mano
+    100056: r_punta
+    100058: r_rodilla
+    100060: r_tobillo
+    100062: torax
+    100064: torso
+    400000: back
+    400002: bottom
+    400004: cabeza
+    400006: clavicula1
+    400008: clavicula2
+    400010: cuello
+    400012: ikHandle5
+    400014: ikHandle6
+    400016: ikHandle7
+    400018: ikHandle8
+    400020: ikHandle9
+    400022: joint6
+    400024: l_codo
+    400026: l_femur
+    400028: l_hombro
+    400030: l_mano
+    400032: l_punta
+    400034: l_rodilla
+    400036: l_tobillo
+    400038: left
+    400040: //RootNode
+    400042: nurbsCircle1
+    400044: pelvis
+    400046: polySurface15
+    400048: r_codo
+    400050: r_femur
+    400052: r_hombro
+    400054: r_mano
+    400056: r_punta
+    400058: r_rodilla
+    400060: r_tobillo
+    400062: torax
+    400064: torso
+    2000000: back
+    2000002: bottom
+    2000004: left
+    2100000: blinn2
+    2100002: lambert3
+    2100004: heavymetals
+    2100006: face
+    4300000: polySurface15
+    7400000: walk-attack
+    9500000: //RootNode
+    13700000: polySurface15
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: walk-attack
+      takeName: walk-attack
+      firstFrame: 28
+      lastFrame: 52
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 35
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

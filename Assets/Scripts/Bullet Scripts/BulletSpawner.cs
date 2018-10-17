@@ -9,6 +9,9 @@ public class BulletSpawner : MonoBehaviour {
     
     bool facingRight;
 
+
+    public Animator anim;
+
     private void Start() {
         objectPooler = ObjectPooler.Instance;
         facingRight = true;
@@ -23,6 +26,7 @@ public class BulletSpawner : MonoBehaviour {
             facingRight = false;
         }
         if (Controllers.GetButton(1, "X", 2)) {
+            anim.SetTrigger("Shoot");
             objectPooler.GetObjectFromPool("Blast", transform.position, facingRight);
             objectPooler.GetObjectFromPool("Bullet", transform.position, facingRight);
         }
