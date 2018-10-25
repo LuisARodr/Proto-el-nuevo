@@ -24,7 +24,7 @@ public abstract class MenuController : MonoBehaviour {
     protected int index;
 
     [SerializeField]
-    protected Image[] menuOptions;
+    protected Button[] menuOptions;
     protected bool returnedToCenter;
 
     protected bool canPause;
@@ -49,10 +49,10 @@ public abstract class MenuController : MonoBehaviour {
     // Use this for initialization
     void Awake () {
         menuSize = menuOptions.Length;
-        index = 0;
+        //index = 0;
         setPause();
-        RefreshMenu(index);
-        returnedToCenter = true;
+        //RefreshMenu(index);
+        //returnedToCenter = true;
         deadScreen = false;
         tm = new TimeManager(0f);
         initialDeadCount = false;
@@ -61,9 +61,47 @@ public abstract class MenuController : MonoBehaviour {
         blackScreen = deadScreenGO.GetComponent<Image>();
         redText = deadScreenGO.GetComponentInChildren<Text>();
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Start()
+    {
+        if (!canPause)
+        {
+            for(int i = 0; i < menuOptions.Length; i++)
+            {
+                switch (i)
+                {
+                    case 0:
+                        menuOptions[i].onClick.AddListener(NewGame);
+                        break;
+                    case 1:
+                        menuOptions[i].onClick.AddListener(LoadGame);
+                        break;
+                    case 2:
+                        menuOptions[i].onClick.AddListener(ExitGame);
+                        break;
+
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < menuOptions.Length; i++)
+            {
+                switch (i)
+                {
+                    case 0:
+                        menuOptions[i].onClick.AddListener(ResumeGame);
+                        break;
+                    case 1:
+                        menuOptions[i].onClick.AddListener(ReturnToTitle);
+                        break;
+                }
+            }
+        }
+    }
+
+    // Update is called once per frame
+    void Update () {
         if (Controllers.GetButton(1, "Start", 1) & canPause)
         {
             if (isPaused)
@@ -75,10 +113,10 @@ public abstract class MenuController : MonoBehaviour {
                 isPaused = true;
                 pauseMenu.SetActive(true);
                 Time.timeScale = 0f;
-                RefreshMenu(index);
+                //RefreshMenu(index);
             }
         }
-
+        /*
         if ((isPaused & canPause) || !canPause)
         {
             //print(returnedToCenter);
@@ -96,7 +134,7 @@ public abstract class MenuController : MonoBehaviour {
                     returnedToCenter = false;
                     index++;
                 }
-                RefreshMenu(index);
+                //RefreshMenu(index);
             }
             else
             {
@@ -132,6 +170,7 @@ public abstract class MenuController : MonoBehaviour {
                 }
             }
         }
+        */
         /*
         if (Controllers.GetButton(1, "Y", 1))
         {
@@ -189,6 +228,7 @@ public abstract class MenuController : MonoBehaviour {
 
     }
 
+    /*
     private void RefreshMenu(int index)
     {
         for (int i = 0; i < menuSize; i++)
@@ -198,7 +238,7 @@ public abstract class MenuController : MonoBehaviour {
             
         }
     }
-
+    */
     public void ResumeGame()
     {
         isPaused = false;
