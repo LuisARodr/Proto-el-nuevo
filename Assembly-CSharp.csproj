@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{64BF69D3-FF61-4D35-CACB-536A45F69740}</ProjectGuid>
+    <ProjectGuid>{C2164F56-0179-2FC9-8539-859CE741C0A9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -89,22 +89,22 @@
     <Compile Include="Assets\Scripts\Plataform.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Reference Include="Cinemachine">
-      <HintPath>C:/Users/LuisAngel/Documents/GitHub/Proto el nuevo/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>C:/Users/LuisAngel/Documents/GitHub/Proto-el-nuevo/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/LuisAngel/Documents/GitHub/Proto el nuevo/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/LuisAngel/Documents/GitHub/Proto-el-nuevo/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/LuisAngel/Documents/GitHub/Proto el nuevo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/LuisAngel/Documents/GitHub/Proto-el-nuevo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/LuisAngel/Documents/GitHub/Proto el nuevo/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/LuisAngel/Documents/GitHub/Proto-el-nuevo/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Users/LuisAngel/Documents/GitHub/Proto el nuevo/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>C:/Users/LuisAngel/Documents/GitHub/Proto-el-nuevo/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/LuisAngel/Documents/GitHub/Proto el nuevo/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/LuisAngel/Documents/GitHub/Proto-el-nuevo/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
